@@ -2,133 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>🖥️ IT Tutorials Sidebar</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #D3D3D3;
-        }
-        .container {
-            display: flex;
-            height: 100vh;
-        }
-        .sidebar {
-            width: 250px;
-            background-color: #708090;
-            color: white;
-            padding: 20px;
-            box-shadow: 3px 0 5px rgba(0,0,0,0.2);
-        }
-        .sidebar h2 {
-            border-bottom: 2px solid white;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-        .category {
-            margin-bottom: 10px;
-            background-color: #5070A0;
-            border: 1px solid #404040;
-        }
-        .category-header {
-            cursor: pointer;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #6080B0;
-        }
-        .category-header:hover {
-            background-color: #7090C0;
-        }
-        .subcategories {
-            display: none;
-            background-color: #4060A0;
-            padding: 10px;
-        }
-        .subcategories a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 5px;
-            margin: 3px 0;
-            background-color: #5070B0;
-        }
-        .subcategories a:hover {
-            background-color: #6080C0;
-            text-decoration: underline;
-        }
-        .main-content {
-            flex-grow: 1;
-            background-color: white;
-            padding: 20px;
-            overflow-y: auto;
-        }
-        .expand-icon {
-            transition: transform 0.3s ease;
-        }
-        .category.active .expand-icon {
-            transform: rotate(90deg);
-        }
-        .category.active .subcategories {
-            display: block;
-        }
-    </style>
+    <title>🌐 Alexis' World</title>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <h2>🌐 IT Tutorials</h2>
-            
-            <div class="category">
-                <div class="category-header" onclick="toggleCategory(this)">
-                    🔧 System Setup
-                    <span class="expand-icon">▶</span>
-                </div>
-                <div class="subcategories">
-                    <a href="#">Windows Setup</a>
-                    <a href="#">Linux Installation</a>
-                    <a href="#">Mac Configuration</a>
-                </div>
-            </div>
-            
-            <div class="category">
-                <div class="category-header" onclick="toggleCategory(this)">
-                    💻 Troubleshooting
-                    <span class="expand-icon">▶</span>
-                </div>
-                <div class="subcategories">
-                    <a href="#">Hardware Diagnostics</a>
-                    <a href="#">Software Errors</a>
-                    <a href="#">Network Issues</a>
-                </div>
-            </div>
-            
-            <div class="category">
-                <div class="category-header" onclick="toggleCategory(this)">
-                    🌐 Networking
-                    <span class="expand-icon">▶</span>
-                </div>
-                <div class="subcategories">
-                    <a href="#">Router Configuration</a>
-                    <a href="#">VPN Setup</a>
-                    <a href="#">Network Security</a>
-                </div>
-            </div>
+
+	<center>
+		<a href="/web/19961017235908/http://www.yahoo.com/bin/top2"><img 	alt="[Yahoo!]" ismap width="447" height="57" border="0" hspace="0" 		src="https://web.archive.org/web/20000408183231im_/http://us.yimg.com/images/main2.gif"></a>
+   	 	<div class="container">
+       		<div class="header">
+       		    🌐 Alexis' World 🖥️
+       	</div>
+       		
+        <div class="under-construction">
+            🚧 UNDER CONSTRUCTION 🚧<br>
+            Last Updated: December 1994
         </div>
-        
-        <div class="main-content">
-            <h1>Welcome to My IT Tutorial Blog</h1>
-            <p>Select a category from the sidebar to view tutorials and guides.</p>
+	</center>
+        <div class="navigation">
+            <div class="nav-section">
+                <h3>💻 macOS</h3>
+                <div class="nav-links">
+                    <a href="#">Windows 95 Installation Guide</a>
+					<br>
+                    <a href="#">DOS Configuration Tricks</a>
+					<br>
+                    <a href="#">Linux for Beginners</a>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <h3>🐧 Linux</h3>
+                <div class="nav-links">
+                    <a href="#">Fixing Common PC Errors</a>
+					<br>
+                    <a href="#">Modem Connection Problems</a>
+					<br>
+                    <a href="#">Hardware Diagnostics</a>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <h3>🪟 Windows</h3>
+                <div class="nav-links">
+                    <a href="#">Setting Up Your First Network</a>
+					<br>
+                    <a href="#">Ethernet Basics</a>
+					<br>
+                    <a href="#">Internet Connectivity Tips</a>
+                </div>
+            </div>
         </div>
     </div>
-
-    <script>
-        function toggleCategory(header) {
-            const category = header.closest('.category');
-            category.classList.toggle('active');
-        }
-    </script>
 </body>
 </html>
