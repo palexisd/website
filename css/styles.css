@@ -1,13 +1,23 @@
 /* styles.css */
 body {
-  background-color: #ffffff;
-  margin: 0;
+  background-image: url("../images/bg.gif");
+  background-repeat: repeat-y;
+  margin: 10;
   padding: 0;
+}
+
+.navigation {
+  padding-left: 170px;
 }
 
 div {
   color: #000000;
   line-height: 1.6;
+}
+
+.container {
+  flex: 1;
+  position: relative;
 }
 
 .bottom-text {
@@ -25,7 +35,7 @@ a {
 }
 
 p {
-  color: #ffffff;
+  color: #000000;
   line-height: 1.6;
   font-weight: bold;
 }
