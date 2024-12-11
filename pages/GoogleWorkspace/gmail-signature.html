@@ -14,9 +14,9 @@
     <br>
     <div class="navigation">
         <a href="https://workspace.google.com/"><img src="../../images/google.gif" width="15%" height="15%"></a>
-        <p>Signature management tools like Exclaimer are excellent for handling company-wide email signatures, but they can be prohibitively expensive. This guide will walk you through setting up your own signature management system for Gmail using primarily free tools—aside from the cost of a Google Workspace subscription.
+        <p>Signature management tools like Exclaimer are excellent for handling company-wide email signatures, but they can be prohibitively expensive, especially when you have hundreds of users. This guide will walk you through setting up your own signature management system for Gmail using primarily free tools—aside from the cost of a Google Workspace subscription.
         The objective is to automate the creation of email signatures for all users, streamlining the onboarding process and minimizing the risk of human error.</p>
-        <h3>Configuring your template.s</h3>
+        <h3>1. Configuring your template.s</h3>
         <p>Your templates will need to be created in HTML format. If you're not familiar with HTML, don’t worry! You can use AI tools like ChatGPT, Claude, or Gemini to help you write the code. One of the great features of HTML signatures is the ability to embed links within images—such as linking your company’s website to your logo. Plus, HTML signatures are straightforward and even fun (for me) to create.
         Here’s the file we’ll use for this demonstration: </p>
         <div class="container">
@@ -27,7 +27,7 @@
                 <p>⬆ Click on the folder to see the signature, and use view source to see the code.</p>
             </div>
         </div>
-        <p>We now have our template. For this demonstration, I kept it simple, but you can enhance it by adding CSS stylesheets, custom fonts, colors, URLs, and nearly anything else that HTML supports (with a few exceptions). You may have noticed something—the template uses variables. This approach allows us to replace the variables with user-specific information. For instance, here’s how I’d like mine to look: </p>
+        <p>We now have our template. For this demonstration, I kept it simple, but you can enhance it by adding CSS stylesheets, custom fonts, colors, URLs, and nearly anything else that HTML supports (with a few exceptions). You can even create multiple templates for your various departments! You may have noticed something—the template uses variables. This approach allows us to replace the variables with user-specific information. For instance, here’s how I’d like mine to look: </p>
         <table cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: none;">
             <tr>
               <td style="border-right: 1px solid #ccc; padding-right: 10px; font-family:sans-serif;font-size:10pt";>
@@ -57,5 +57,8 @@
               </tr>
             </tbody>
           </table>
+          <p>Here’s the challenge: I have hundreds of users, and there’s no way I have the time to customize an HTML file for each one individually. To solve this, we need a way to store the data that will replace the variables. While we could use a good ol' CSV file, it would make collaboration cumbersome. Instead, let’s take advantage of something we all already have access to with our Google Workspace license: Google Sheets.</p>
+          <h3>2. Configuring your user list</h3>
+          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRD431twDaKmX5bl7no_M0d5NPiOI-O11e8j8E0hzwDNQqg_5H90YtjS_7C__bVrNc0lrlrDbkchXL8/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 </body>
 </html>
