@@ -18,7 +18,44 @@
         The objective is to automate the creation of email signatures for all users, streamlining the onboarding process and minimizing the risk of human error.</p>
         <h3>Configuring your template.s</h3>
         <p>Your templates will need to be created in HTML format. If you're not familiar with HTML, don’t worry! You can use AI tools like ChatGPT, Claude, or Gemini to help you write the code. One of the great features of HTML signatures is the ability to embed links within images—such as linking your company’s website to your logo. Plus, HTML signatures are straightforward and even fun (for me) to create.
-        Here’s the file we’ll use for this demonstration:</p>
-    </div>
+        Here’s the file we’ll use for this demonstration: </p>
+        <div class="container">
+            <div class="image">
+                <a href="demo-signature.html"><img src="../../images/file-manager.png" width="3%" height="3%"></a> 
+            </div>
+            <div class="text">
+                <p>⬆ Click on the folder to see the signature, and use view source to see the code.</p>
+            </div>
+        </div>
+        <p>We now have our template. For this demonstration, I kept it simple, but you can enhance it by adding CSS stylesheets, custom fonts, colors, URLs, and nearly anything else that HTML supports (with a few exceptions). You may have noticed something—the template uses variables. This approach allows us to replace the variables with user-specific information. For instance, here’s how I’d like mine to look: </p>
+        <table cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: none;">
+            <tr>
+              <td style="border-right: 1px solid #ccc; padding-right: 10px; font-family:sans-serif;font-size:10pt";>
+                <h3 style="margin: 0;">Alexis World</h3>
+                <p style="margin: 5px 0;">System Administrator, IT</p>
+              </td>
+              <td style="padding-left: 10px; font-family:sans-serif;font-size:10pt;">
+                <p style="margin: 5px 0;">
+                  Phone: 555 555-5555<br>
+                </p>
+                <p style="margin: 5px 0;">
+                  <a href="https://palexisd.github.io/website/" style="margin-left: 0px;"><img src="../../images/world.gif" alt="Twitter" width="25%" height="25%"></a>
+                </p>
+              </td>
+            </tr>
+          </table>
+          <table role="presentation" style="border-collapse:collapse;max-width:450px;" cellpadding="0" cellspacing="0" emb-background-style width="450">
+            <tbody>
+              <tr>
+                <td align="left" valign="bottom" style="padding:25pt 0in 0in 0in;">
+                    <p class="msonormal2" style="margin:.1pt;line-height:9.0pt;">
+                          <span style="color:#999695;font-size:8.0pt;font-family:sans-serif;">
+                            This email and any attached files are intended solely for the use of the individual or entity to whom they are addressed. If you have received this email in error, please notify the sender immediately and delete it from your system. Any unauthorized review, use, disclosure, or distribution is prohibited.
+                          </span>
+                      </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 </body>
 </html>
